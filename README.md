@@ -1,6 +1,6 @@
 # Battleship Game
 -----------------
-This is a one-player vs. computer version, where the computer places the ships, and the human attempts to sink them.
+This is a game where the program places the ships randomly, and the player attempts to sink them.
 Game will be play on a “ocean” and will be using the following ships (“the fleet”)
 | Ship        |         
 | ------------| 
@@ -8,6 +8,11 @@ Game will be play on a “ocean” and will be using the following ships (“the
 | `Cruiser`   | 
 | `Destroyers`| 
 | `Submarines`| 
+
+Player can either one-player vs. computer mode, or player with another player in two player mode
+
+![image](https://user-images.githubusercontent.com/77389522/173025586-b528a920-7d6f-4936-bc70-570d1979994c.png)
+
 
 Player can choose to create the ocean or randomly create the ocean.
 ![image](https://user-images.githubusercontent.com/77389522/173012566-81fd0992-5593-4e5f-8caf-d15bcf8495ea.png)
@@ -26,7 +31,7 @@ if player chooose to create the ocean, player will be ask for the size of ocean 
 | `Submarines`| 16     |
 
 ## How to Play Battleship
-The computer places the ten ships on the ocean in such a way that no ships are immediately adjacent to each other, either horizontally, vertically, or diagonally. 
+The computer places the certian amount of battleship on the ocean in such a way that no ships are immediately adjacent to each other, either horizontally, or vertically. 
 
 The player does not know where the ships are. The initial display of the ocean to be printed to the console therefore shows a ocean of ‘.‘ 
 #### Regular 15 * 18 ocean with all ships hidden
