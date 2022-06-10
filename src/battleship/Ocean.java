@@ -310,14 +310,14 @@ public class Ocean {
 			for (int c = 0; c < oceanCol; c++) {
 
 				// if the location is hit print the the location with mark
-//				if (this.hitLocation[r][c] == true) {
+				if (this.hitLocation[r][c] == true) {
 
 					System.out.print("  " + ships[r][c]);
 
-//				} else {
-//					// print "." to indicate a location that is never fired
-//					System.out.print(" " + "."); // ships[r][c]);
-//				}
+				} else {
+					// print "." to indicate a location that is never fired
+					System.out.print("  " + "."); // ships[r][c]);
+				}
 
 			}
 			// print new line

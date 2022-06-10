@@ -1,5 +1,6 @@
 package battleship;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -20,6 +21,42 @@ public class BattleshipGame {
 
 	static boolean playAgain = true;
 
+	 private static int[] createOcean(Scanner scan){
+		System.out.println("Do you want to create the ocean by yourself, or randomly create a ocean");
+		System.out.println("Enter 1 to create by yourself, 2 to randomly create a ocean");
+		int create = scan.nextInt();
+		while(create > 2 || create < 1){
+			System.out.print("Invalid! Enter 1 to create by yourself, 2 to randomly create a ocean");
+			create = scan.nextInt();
+		}
+
+		int newOceanRow = 0;
+		int newOceanCol = 0;
+		if(create == 1){
+			System.out.println("\nPlease enter how many row and column you wish to have in the ocean");
+			System.out.println("Enter amount row in the ocean (10-100)");
+			newOceanRow = scan.nextInt();
+			while(newOceanRow < 10 || newOceanRow > 100){
+				System.out.print("Invalid! Enter the row in the ocean (10-100)");
+				newOceanRow = scan.nextInt();
+			}
+			System.out.println("Enter amount column in the ocean(10-100)");
+			newOceanCol = scan.nextInt();
+			while(newOceanCol < 10 || newOceanCol > 100){
+				System.out.print("Invalid! Enter the row in the ocean (10-100)");
+				newOceanCol = scan.nextInt();
+			}
+		}
+		else{
+			Random rand = new Random();
+			newOceanRow = rand.nextInt(100);
+			newOceanCol = rand.nextInt(100);
+		}
+
+
+		return new int[] {newOceanRow, newOceanCol};
+	}
+
 	public static void main(String[] args) {
 
 		// print introduction of the game
@@ -36,18 +73,9 @@ public class BattleshipGame {
 
 		while (gameRun) {
 
-			System.out.println("Enter amount row in the ocean (10-100)");
-			int newOceanRow = scan.nextInt();
-			while(newOceanRow < 10 || newOceanRow > 100){
-				System.out.print("Invalid! Enter the row in the ocean (10-100)");
-				newOceanRow = scan.nextInt();
-			}
-			System.out.println("Enter amount column in the ocean(10-100)");
-			int newOceanCol = scan.nextInt();
-			while(newOceanCol < 10 || newOceanCol > 100){
-				System.out.print("Invalid! Enter the row in the ocean (10-100)");
-				newOceanCol = scan.nextInt();
-			}
+			int[] newOcean = createOcean(scan);
+			int newOceanRow = newOcean[0];
+			int newOceanCol = newOcean[1];
 
 			// create the ocean
 			Ocean ocean = new Ocean(newOceanRow,newOceanCol);
