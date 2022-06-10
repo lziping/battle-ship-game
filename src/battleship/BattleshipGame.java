@@ -54,7 +54,7 @@ public class BattleshipGame {
 				System.out.println("Enter the row(0-"+ (newOceanRow-1) + "):");
 				row = scan.nextInt();
 				// if the input of row is invalid, prompt to re enter
-				while (row > 9 || column < 0) {
+				while (row > newOceanRow-1 || column < 0) {
 					System.out.print("Invalid! Enter the row again(0-"+ (newOceanRow-1) +"):");
 					row = scan.nextInt();
 				}
@@ -63,7 +63,7 @@ public class BattleshipGame {
 				System.out.println("Enter the column(0-"+ (newOceanCol-1)+"):");
 				column = scan.nextInt();
 				// if the input of column is invalid, prompt to re enter
-				while (column > 9 || column < 0) {
+				while (column > newOceanCol-1 || column < 0) {
 					System.out.print("Invalid! Enter the column again(0-"+ (newOceanCol-1)+"):");
 					column = scan.nextInt();
 

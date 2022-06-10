@@ -35,7 +35,7 @@ public class Ocean {
 	/*
 	 * to store location that have been hit.
 	 */
-	private boolean[][] hitLocation = new boolean[10][10];
+	private boolean[][] hitLocation;
 
 
 	public static int oceanRow;
@@ -51,7 +51,8 @@ public class Ocean {
 		this.shotsFired = 0;
 		this.oceanRow = oceanRow;
 		this.oceanCol = oceanCol;
-		ships = new Ship[oceanRow][oceanCol];
+		this.ships = new Ship[oceanRow][oceanCol];
+		this.hitLocation = new boolean[oceanRow][oceanCol];
 
 		// iterate the row, r for row
 		for (int r = 0; r < oceanRow; r++) {
@@ -320,9 +321,18 @@ public class Ocean {
 
 			}
 			// print new line
+			System.out.print("  "+r);
 			System.out.println("");
-
 		}
+		System.out.print("  ");
+		for(int i = 0 ; i < oceanCol; i++) {
+			if (i < 10){
+				System.out.print("  " + i);
+			} else{
+				System.out.print(" " + i);
+			}
+		}
+		System.out.println("");
 	}
 
 	/**
