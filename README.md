@@ -12,9 +12,12 @@ Game will be play on a 10x10 “ocean” and will be using the following ships (
 ## How to Play Battleship
 The computer places the ten ships on the ocean in such a way that no ships are immediately adjacent to each other, either horizontally, vertically, or diagonally. 
 
-The player does not know where the ships are. The initial display of the ocean to be printed to the console therefore shows a 10 by 10 array of ‘.‘ 
+The player does not know where the ships are. The initial display of the ocean to be printed to the console therefore shows a ocean of ‘.‘ 
+#### Regular 15 * 18 ocean with all ships hidden
+![image](https://user-images.githubusercontent.com/77389522/173008444-c16cd29e-7fa1-46cf-b646-89398248b85b.png)
 
-![image](https://user-images.githubusercontent.com/77389522/172989436-3a5e8998-45ae-4c35-9072-028ecdb1046a.png)
+#### Ocean that shown the ships in a 20 x 20 ocean 
+![image](https://user-images.githubusercontent.com/77389522/173008158-5b502343-0772-455f-9ff7-e56f72f948ad.png)
 
 ### Hit or Miss
 The human player tries to hit the ships, by indicating a specific row and column number (r,c). The computer responds with one bit of information saying, “hit” or “miss”.
