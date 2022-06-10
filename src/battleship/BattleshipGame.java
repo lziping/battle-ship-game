@@ -92,9 +92,9 @@ public class BattleshipGame {
 	}
 
 	private static void multiPlayer(Scanner scan){
-		System.out.println("Enter is the name of Player 1~");
+		System.out.println("Enter the name of Player 1");
 		String name1 = scan.next() + " ";
-		System.out.println("Enter is the name of Player 2~");
+		System.out.println("Enter the name of Player 2");
 		String name2 = scan.next() + " ";
 		boolean gameRun = true;
 		while (gameRun) {
