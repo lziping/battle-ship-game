@@ -38,8 +38,16 @@ public class BattleshipGame {
 
 			System.out.println("Enter amount row in the ocean (10-100)");
 			int newOceanRow = scan.nextInt();
+			while(newOceanRow < 10 || newOceanRow > 100){
+				System.out.print("Invalid! Enter the row in the ocean (10-100)");
+				newOceanRow = scan.nextInt();
+			}
 			System.out.println("Enter amount column in the ocean(10-100)");
 			int newOceanCol = scan.nextInt();
+			while(newOceanCol < 10 || newOceanCol > 100){
+				System.out.print("Invalid! Enter the row in the ocean (10-100)");
+				newOceanCol = scan.nextInt();
+			}
 
 			// create the ocean
 			Ocean ocean = new Ocean(newOceanRow,newOceanCol);
