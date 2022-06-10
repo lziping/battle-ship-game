@@ -9,7 +9,11 @@ Game will be play on a “ocean” and will be using the following ships (“the
 | `Destroyers`| 
 | `Submarines`| 
 
-User will be ask to create the size of ocean before the game begin, the amount of each type of ship will depend on the size of the ocean
+Player can choose to create the ocean or randomly create the ocean.
+![image](https://user-images.githubusercontent.com/77389522/173012566-81fd0992-5593-4e5f-8caf-d15bcf8495ea.png)
+
+
+if player chooose to create the ocean, player will be ask for the size of ocean before the game begin, the amount of each type of ship will depend on the size of the ocean
 ![image](https://user-images.githubusercontent.com/77389522/173009628-aa79476a-1a29-4fdc-94a5-31a48e40df45.png)
 
 
