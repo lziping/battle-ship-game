@@ -1,14 +1,15 @@
 # Battleship Game
 -----------------
 This is a one-player vs. computer version, where the computer places the ships, and the human attempts to sink them.
-User will be ask to create the size of ocean before the game begin, the amount of each type of ship will depend on the size of the ocean
+User will be ask to create the size of ocean before the game begin, the amount of each type of ship will depend on the size of the ocean:
 Game will be play on a “ocean” and will be using the following ships (“the fleet”):
+For example in a 20x20 ocean the amount of ships will be:
 | Ship        | Amount |         
 | ------------| -------|
-| `Battleship`| 1      | 
-| `Cruiser`   | 2      |
-| `Destroyers`| 3      |
-| `Submarines`| 4      |
+| `Battleship`| 4      | 
+| `Cruiser`   | 8      |
+| `Destroyers`| 12     |
+| `Submarines`| 16     |
 
 ## How to Play Battleship
 The computer places the ten ships on the ocean in such a way that no ships are immediately adjacent to each other, either horizontally, vertically, or diagonally. 
